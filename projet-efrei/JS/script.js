@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const email = document.getElementById('userEmail').value;
             const status = document.getElementById('statusMessage');
 
-            // Simple validation regex
+            
             if (email.includes('@')) {
                 status.innerHTML = "<p style='color: green; margin-top:10px;'>Message envoyé avec succès !</p>";
                 form.reset();

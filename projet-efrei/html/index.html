@@ -103,10 +103,12 @@
             currentIndex = 0; // Revient à la première image
         }
         
+        // Calcule le décalage pour le défilement
         const offset = -currentIndex * (100 / totalSlides);
         sliderWrapper.style.transform = `translateX(${offset}%)`;
     }
 
+    // Lance l'animation toutes les 3000ms (3 secondes)
     setInterval(showNextSlide, 3000);
 </script>
 </body>

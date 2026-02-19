@@ -4,15 +4,14 @@
     <meta charset="UTF-8">
     <title>Nos Formations - Efrei</title>
     <link rel="stylesheet" href="../css/styles.css">
-
     <style>
+        
         .formation-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 25px;
             margin-top: 30px;
         }
-
         .formation-card {
             border: 1px solid #ddd;
             border-radius: 8px;
@@ -20,23 +19,19 @@
             transition: transform 0.3s ease;
             background: #fff;
         }
-
         .formation-card:hover {
             transform: translateY(-5px);
             box-shadow: 0 10px 20px rgba(0,0,0,0.1);
         }
-
         .formation-img {
             width: 100%;
             height: 180px;
-            object-fit: cover;
             background-color: #f0f0f0;
+            object-fit: cover;
         }
-
         .formation-content {
             padding: 20px;
         }
-
         .tag {
             display: inline-block;
             background: var(--efrei-blue, #004a99);
@@ -46,44 +41,20 @@
             font-size: 0.8em;
             margin-bottom: 10px;
         }
-
         .section-divider {
             height: 2px;
             background: #eee;
             margin: 50px 0;
             border: none;
         }
-
-        /* TABLE STYLE */
-        .table-style {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 20px;
-            text-align: left;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-            border: 1px solid #ddd;
-        }
-
-        .table-style th,
-        .table-style td {
-            padding: 15px;
-            border: 1px solid #ddd;
-        }
-
-        .table-style th {
-            background: #004a99;
-            color: white;
-        }
     </style>
 </head>
-
 <body>
     <header class="main-header">
         <div class="header-container">
             <a href="index.html">
                 <img src="../images/logo-efrei.png" alt="Efrei Paris" class="logo">
             </a>
-
             <nav class="main-nav">
                 <ul>
                     <li><a href="index.html" class="active">L'école</a></li>
@@ -92,24 +63,18 @@
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
-
             <div class="header-actions">
                 <a href="https://www.efrei.fr/brochure/" target="_blank" class="btn btn-dark">Brochure ↗</a>
-                <a href="https://www.efrei.fr/candidature/" class="btn btn-blue">Candidature</a>
+                <a href="https://www.efrei.fr/candidature/?_gl=1*1ddbar*_up*MQ..*_ga*OTI1MDcyMDUxLjE3NzE0ODk0OTk.*_ga_15PWZ9KZCG*czE3NzE0ODk0OTkkbzEkZzEkdDE3NzE0ODk0OTkkajYwJGwwJGg4MzgzNDAwOTI." class="btn btn-blue">Candidature</a>
             </div>
         </div>
     </header>
 
     <main class="container" style="padding: 60px 10%;">
-
         <section id="hero">
-            <h1 style="color: var(--efrei-blue); margin-bottom: 20px;">
-                L'Excellence Académique au Cœur du Numérique
-            </h1>
-
+            <h1 style="color: var(--efrei-blue); margin-bottom: 20px;">L'Excellence Académique au Cœur du Numérique</h1>
             <p class="description-text">
-                L'Efrei propose une gamme complète de formations allant du Bachelor au cycle Ingénieur,
-                couvrant tous les domaines clés de la tech. Explorez nos spécialisations ci-dessous.
+                L'Efrei propose une gamme complète de formations allant du Bachelor au cycle Ingénieur, couvrant tous les domaines clés de la tech. Explorez nos spécialisations ci-dessous.
             </p>
         </section>
 
@@ -117,15 +82,13 @@
 
         <section id="expertises">
             <h2>Nos Domaines d'Expertise</h2>
-
             <div class="formation-grid">
-
                 <article class="formation-card">
                     <img src="../images/AI.jpg" alt="IA et Data" class="formation-img">
                     <div class="formation-content">
                         <span class="tag">Futur & Innovation</span>
                         <h3>Intelligence Artificielle</h3>
-                        <p>Apprenez à concevoir des algorithmes prédictifs et à analyser des données massives.</p>
+                        <p>Apprenez à concevoir des algorithmes prédictifs et à analyser des données massives pour transformer les entreprises.</p>
                     </div>
                 </article>
 
@@ -134,7 +97,7 @@
                     <div class="formation-content">
                         <span class="tag">Protection</span>
                         <h3>Cybersécurité</h3>
-                        <p>Devenez un expert de la protection des systèmes et luttez contre la cybercriminalité.</p>
+                        <p>Devenez un expert de la protection des systèmes et apprenez à lutter efficacement contre la cybercriminalité.</p>
                     </div>
                 </article>
 
@@ -143,7 +106,7 @@
                     <div class="formation-content">
                         <span class="tag">Code</span>
                         <h3>Développement Web & Mobile</h3>
-                        <p>Maîtrisez HTML5, CSS3, JavaScript et les technologies back-end.</p>
+                        <p>Maîtrisez les technologies front-end (HTML5, CSS3, JavaScript) et back-end pour créer des applications performantes.</p>
                     </div>
                 </article>
 
@@ -152,7 +115,7 @@
                     <div class="formation-content">
                         <span class="tag">Infrastructure</span>
                         <h3>Cloud Computing & Réseaux</h3>
-                        <p>Concevez des architectures serveurs scalables et hybrides.</p>
+                        <p>Concevez des architectures serveurs scalables et gérez la transition des entreprises vers le cloud hybride.</p>
                     </div>
                 </article>
 
@@ -161,7 +124,7 @@
                     <div class="formation-content">
                         <span class="tag">Objets Connectés</span>
                         <h3>Systèmes Embarqués & IoT</h3>
-                        <p>Développez l'intelligence des objets connectés de demain.</p>
+                        <p>Développez l'intelligence des objets de demain, de la domotique aux capteurs industriels intelligents.</p>
                     </div>
                 </article>
 
@@ -170,10 +133,9 @@
                     <div class="formation-content">
                         <span class="tag">Impact</span>
                         <h3>Numérique Responsable</h3>
-                        <p>Optimisez l'empreinte carbone du code et créez des solutions durables.</p>
+                        <p>Apprenez à optimiser l'empreinte carbone du code et à concevoir des solutions technologiques durables.</p>
                     </div>
                 </article>
-
             </div>
         </section>
 
@@ -182,43 +144,39 @@
         <section id="parcours">
             <h2>Agenda & Niveaux d'Admission</h2>
             <p>Choisissez le parcours qui correspond à votre profil académique.</p>
-
-            <table class="table-style">
-                <tr>
-                    <th>Parcours</th>
-                    <th>Niveau Admissions</th>
-                    <th>Diplôme Visé</th>
-                    <th>Durée</th>
+            
+            <table border="1" style="width:100%; border-collapse: collapse; margin-top: 20px; text-align: left; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
+                <tr style="background: #004a99; color: white;">
+                    <th style="padding: 15px;">Parcours</th>
+                    <th style="padding: 15px;">Niveau Admissions</th>
+                    <th style="padding: 15px;">Diplôme Visé</th>
+                    <th style="padding: 15px;">Durée</th>
                 </tr>
-
                 <tr>
-                    <td><strong>Cycle Ingénieur</strong></td>
-                    <td>Bac +2 / Prépa</td>
-                    <td>Diplôme d'Ingénieur (CTI)</td>
-                    <td>3 ans</td>
+                    <td style="padding: 15px;"><strong>Cycle Ingénieur</strong></td>
+                    <td style="padding: 15px;">Bac +2 / Prépa</td>
+                    <td style="padding: 15px;">Diplôme d'Ingénieur (CTI)</td>
+                    <td style="padding: 15px;">3 ans</td>
                 </tr>
-
                 <tr>
-                    <td><strong>Bachelor Experts</strong></td>
-                    <td>Bac</td>
-                    <td>Bac +3 (Titre RNCP)</td>
-                    <td>3 ans</td>
+                    <td style="padding: 15px;"><strong>Bachelor Experts</strong></td>
+                    <td style="padding: 15px;">Bac</td>
+                    <td style="padding: 15px;">Bac +3 (Titre RNCP)</td>
+                    <td style="padding: 15px;">3 ans</td>
                 </tr>
-
                 <tr>
-                    <td><strong>Mastères Spécialisés</strong></td>
-                    <td>Bac +3 / Bac +4</td>
-                    <td>Bac +5 (Expertise)</td>
-                    <td>1 à 2 ans</td>
+                    <td style="padding: 15px;"><strong>Mastères Spécialisés</strong></td>
+                    <td style="padding: 15px;">Bac +3 / Bac +4</td>
+                    <td style="padding: 15px;">Bac +5 (Expertise)</td>
+                    <td style="padding: 15px;">1 à 2 ans</td>
                 </tr>
             </table>
         </section>
-
+        
     </main>
 
     <footer style="margin-top: 60px; text-align: center; padding: 20px; background: #f9f9f9;">
         <p>&copy; 2026 Efrei - Tous droits réservés</p>
     </footer>
-
 </body>
 </html>
