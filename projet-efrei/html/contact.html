@@ -6,12 +6,30 @@
     <title>Contact - Efrei</title>
 </head>
 <body>
-
+    <header class="main-header">
+        <div class="header-container">
+            <a href="index.html">
+                <img src="../images/logo-efrei.png" alt="Efrei Paris" class="logo">
+            </a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html" class="active">L'école</a></li>
+                    <li><a href="formations.html">Formations</a></li>
+                    <li><a href="equipe.html">Équipe</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <a href="https://www.efrei.fr/brochure/" target="_blank" class="btn btn-dark">Brochure ↗</a>
+                <a href="https://www.efrei.fr/candidature/?_gl=1*1ddbar*_up*MQ..*_ga*OTI1MDcyMDUxLjE3NzE0ODk0OTk.*_ga_15PWZ9KZCG*czE3NzE0ODk0OTkkbzEkZzEkdDE3NzE0ODk0OTkkajYwJGwwJGg4MzgzNDAwOTI." class="btn btn-blue">Candidature</a>
+            </div>
+        </div>
+    </header>
     <main style="padding: 50px 10%;">
 
         <section id="equipe-projet" style="text-align: center; margin-bottom: 40px;">
             <h2>À propos du projet Web</h2>
-            <p>Réalisé par : <strong>[Tes Noms ici]</strong> - Groupe XT1205-CYB</p>
+            <p>Réalisé par : <strong>Aymeric  Brevet et Harry Tchakounte</strong> - B1 ICS</p>
         </section>
 
         <section id="formulaire" 
@@ -19,7 +37,7 @@
 
             <div style="
                 width: 100%;
-                background: #c7c7c7;
+                background: #f1f1f1;
                 padding: 40px 50px;
                 border-radius: 12px;
                 box-shadow: 0 4px 20px rgba(0,0,0,0.1);
@@ -51,14 +69,11 @@
                            required 
                            style="padding: 15px; font-size: 1.1rem; width: 100%;">
 
-                    <textarea id="userMessage"
-                    name="message"
-                    placeholder="Votre message"
-                    rows="6"
-                    required
-                    maxlength="1000"
-                    style="padding: 15px; font-size: 1.1rem; width: 100%;resize: none;"></textarea>
-
+                    <textarea 
+                        placeholder="Votre message" 
+                        rows="6" 
+                        style="padding: 15px; font-size: 1.1rem; width: 100%;resize: none;">
+                    </textarea>
 
                     <button type="submit" 
                             class="btn btn-pink"
@@ -74,13 +89,7 @@
 
         </section>
 
-        <div style="text-align: center; margin-top: 50px;">
-            <a href="index.html" 
-               class="btn btn-blue"
-               style="padding: 15px 40px; font-size: 1.2rem; border-radius: 8px; display: inline-block;">
-                Accueil
-            </a>
-        </div>
+        
 
     </main>
 
