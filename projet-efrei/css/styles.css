@@ -1,0 +1,183 @@
+:root {
+    --efrei-blue: #223a70;
+    --efrei-pink: #e45ca1;
+    --efrei-dark: #1d1d1b;
+    --white: #ffffff;
+}
+
+/* RESET ET BASE */
+* { margin: 0; 
+    padding: 0; 
+    box-sizing: 
+    border-box; }
+
+body { font-family: 'Segoe UI', Arial, sans-serif; 
+    color: #333; line-height: 1.5; }
+
+/* HEADER */
+.main-header {
+    background: var(--white);
+    padding: 15px 5%;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    position: sticky; top: 0; z-index: 1000;
+}
+.header-container { width: 100%; 
+    max-width: 1200px; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; }
+
+.logo { height: 50px; }
+.main-nav ul { display: flex; 
+    list-style: none; 
+    gap: 25px; }
+
+.main-nav a { text-decoration: none; 
+    color: var(--efrei-dark); font-weight: 700; 
+    font-size: 0.95rem; }
+
+.main-nav a.active, .main-nav a:hover { color: var(--efrei-pink); }
+
+/* BOUTONS */
+.btn { padding: 12px 24px; 
+    border-radius: 4px; 
+    text-decoration: none; 
+    font-weight: 800; 
+    font-size: 0.85rem; 
+    transition: 0.3s ease; 
+    display: inline-block; }
+
+.btn-dark { background: var(--efrei-blue); 
+    color: var(--white); }
+    
+.btn-blue { background: #3b5998; 
+    color: var(--white); }
+
+.btn-pink { background: var(--efrei-pink); 
+    color: var(--white); }
+
+/* SECTIONS HERO */
+.hero-section {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--white);
+    background-size: cover;
+    background-position: center;
+    padding: 80px 5%;
+}
+.hero-content { width: 100%; 
+    max-width: 1100px; }
+
+.main-title { font-size: 3rem; 
+    font-weight: 900; margin-bottom: 10px; 
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.8); }
+
+.sub-text { font-size: 1.2rem; 
+    margin-bottom: 40px; 
+    text-shadow: 1px 1px 8px rgba(0,0,0,0.8); }
+
+/* BACKGROUNDS (Remplace par tes propres images) */
+.bg-formations { background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('../images/campus.jpg'); }
+.bg-equipe { background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('../images/equipe-bg.jpg'); }
+.bg-contact { background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('../images/contact-bg.jpg'); }
+
+/* STYLE DE LA SECTION PÉDAGOGIQUE RAJOUTÉE */
+.pedagogy-block {
+    background: rgba(255, 255, 255, 0.98);
+    color: #1d1d1b;
+    padding: 40px 30px;
+    border-radius: 12px;
+    margin: 0 auto 40px;
+    max-width: 1000px;
+}
+.pedagogy-tag { background: #fce4ec; 
+    color: var(--efrei-pink); 
+    padding: 5px 15px; 
+    border-radius: 20px; 
+    font-size: 0.8rem; 
+    font-weight: 800; }
+
+.pedagogy-title { color: var(--efrei-blue); 
+    font-size: 2rem; margin: 20px 0 40px; }
+
+.pedagogy-container { display: flex; 
+    gap: 30px; 
+    flex-wrap: wrap; 
+    justify-content: center; }
+
+.pedagogy-item { flex: 1; 
+    min-width: 250px; 
+    text-align: left; }
+
+.pedagogy-item img { width: 100%; 
+    border-radius: 8px; 
+    margin-bottom: 20px; }
+
+.pedagogy-item h3 { font-size: 1.1rem; 
+    color: var(--efrei-blue); 
+    margin-bottom: 10px; 
+    font-weight: 700; }
+
+.pedagogy-item p { font-size: 0.9rem; 
+    color: #555; 
+    text-shadow: none; 
+    line-height: 1.5; }
+
+/* FOOTER */
+.main-footer { background: #1a1a1a; 
+    color: var(--white); 
+    padding: 40px 0; 
+    text-align: center; }
+
+.footer-nav a { color: var(--efrei-pink); 
+    text-decoration: none; 
+    font-weight: bold; 
+    margin-bottom: 10px; 
+    display: inline-block; }
+
+#formulaire div {
+    color: #333333;
+    padding: 40px 50px;
+    border-radius: 12px;
+    line-height: 1.5;
+}
+
+#formulaire input,
+#formulaire textarea {
+    width: 100%;
+    padding: 15px;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    border: none;
+    margin-bottom: 15px;
+}
+
+#formulaire button {
+    width: 100%;
+    padding: 18px;
+    font-size: 1.2rem;
+    border-radius: 8px;
+}
+
+.hero-section.bg-formations {
+    background: var(--efrei-blue);
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-section.bg-equipe {
+    background: var(--efrei-blue);
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-section.bg-contact{
+    background: var(--efrei-blue);
+    background-size: cover;
+    background-position: center;
+}
