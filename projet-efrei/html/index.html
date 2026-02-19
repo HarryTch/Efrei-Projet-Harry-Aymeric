@@ -21,7 +21,7 @@
             </nav>
             <div class="header-actions">
                 <a href="https://www.efrei.fr/brochure/" target="_blank" class="btn btn-dark">Brochure ↗</a>
-                <a href="https://www.efrei.fr/candidature/?_gl=1*1ddbar*_up*MQ..*_ga*OTI1MDcyMDUxLjE3NzE0ODk0OTk.*_ga_15PWZ9KZCG*czE3NzE0ODk0OTkkbzEkZzEkdDE3NzE0ODk0OTkkajYwJGwwJGg4MzgzNDAwOTI." class="btn btn-blue">Candidature</a>
+                <a href="contact.html" class="btn btn-blue">Candidature</a>
             </div>
         </div>
     </header>
@@ -57,7 +57,6 @@
             <a href="formations.html" class="btn btn-pink">Voir les formations</a>
         </div>
     </section>
-    
 
     <section class="hero-section bg-equipe">
         <div class="hero-content">
@@ -66,13 +65,6 @@
             <a href="equipe.html" class="btn btn-pink">Découvrir l'équipe</a>
         </div>
     </section>
-    <div class="slider-container-auto">
-    <div class="slider-wrapper" id="sliderWrapper">
-        <img src="../images/dehor.jpg" class="slide" alt="Ambiance Efrei 1">
-        <img src="../images/plan.jpg" class="slide" alt="Ambiance Efrei 2">
-        <img src="../images/chiffre.jpg" class="slide" alt="Ambiance Efrei 3">
-    </div>
-    </div>
 
     <section class="hero-section bg-contact">
         <div class="hero-content">
@@ -87,29 +79,8 @@
             <nav class="footer-nav">
                 <a href="contact.html">À propos de nous</a>
             </nav>
-            <p>&copy; 2026 Projet Web Efrei - B1 ICS</p>
+            <p>&copy; 2025-2026 Projet Web Efrei - XT1205-CYB</p>
         </div>
     </footer>
-    <script>
-    let currentIndex = 0;
-    const slides = document.querySelectorAll('.slide');
-    const totalSlides = slides.length;
-    const sliderWrapper = document.getElementById('sliderWrapper');
-
-    function showNextSlide() {
-        currentIndex++;
-        
-        if (currentIndex >= totalSlides) {
-            currentIndex = 0; // Revient à la première image
-        }
-        
-        // Calcule le décalage pour le défilement
-        const offset = -currentIndex * (100 / totalSlides);
-        sliderWrapper.style.transform = `translateX(${offset}%)`;
-    }
-
-    // Lance l'animation toutes les 3000ms (3 secondes)
-    setInterval(showNextSlide, 3000);
-</script>
 </body>
 </html>

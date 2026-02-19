@@ -2,190 +2,25 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Notre Équipe - Efrei</title>
+    <title>L'Équipe - Efrei</title>
     <link rel="stylesheet" href="../css/styles.css">
-    <style>
-        .team-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 30px;
-            padding: 40px 0;
-        }
-
-        .flip-card {
-            background-color: transparent;
-            width: 100%;
-            height: 400px;
-            perspective: 1000px; 
-        }
-
-        .flip-card-inner {
-            position: relative;
-            width: 100%;
-            height: 100%;
-            text-align: center;
-            transition: transform 0.6s;
-            transform-style: preserve-3d;
-            cursor: pointer;
-            border-radius: 15px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        }
-
-        
-        .flip-card:hover .flip-card-inner {
-            transform: rotateY(180deg);
-        }
-
-        .flip-card-front, .flip-card-back {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            -webkit-backface-visibility: hidden;
-            backface-visibility: hidden;
-            border-radius: 15px;
-            overflow: hidden;
-        }
-
-        
-        .flip-card-front {
-            background-color: #fff;
-            color: black;
-        }
-
-        .flip-card-front img {
-            width: 100%;
-            height: 80%;
-            object-fit: cover;
-        }
-
-        .member-info {
-            padding: 15px;
-            background: white;
-        }
-
-        .member-info .nom {
-            display: block;
-            font-weight: bold;
-            color: var(--efrei-blue, #004a99);
-            font-size: 1.1em;
-        }
-
-        
-        .flip-card-back {
-            background-color: var(--efrei-blue, #004a99);
-            color: white;
-            transform: rotateY(180deg);
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            padding: 20px;
-            text-align: center;
-        }
-
-        .bio-text {
-            font-size: 0.9em;
-            line-height: 1.4;
-        }
-    </style>
 </head>
 <body>
-    <header class="main-header">
-        <div class="header-container">
-            <a href="index.html">
-                <img src="../images/logo-efrei.png" alt="Efrei Paris" class="logo">
-            </a>
-            <nav class="main-nav">
-                <ul>
-                    <li><a href="index.html" class="active">L'école</a></li>
-                    <li><a href="formations.html">Formations</a></li>
-                    <li><a href="equipe.html">Équipe</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-            <div class="header-actions">
-                <a href="https://www.efrei.fr/brochure/" target="_blank" class="btn btn-dark">Brochure ↗</a>
-                <a href="https://www.efrei.fr/candidature/?_gl=1*1ddbar*_up*MQ..*_ga*OTI1MDcyMDUxLjE3NzE0ODk0OTk.*_ga_15PWZ9KZCG*czE3NzE0ODk0OTkkbzEkZzEkdDE3NzE0ODk0OTkkajYwJGwwJGg4MzgzNDAwOTI." class="btn btn-blue">Candidature</a>
+    <main class="container page-padding">
+        <h2>Équipe du Projet XT1205</h2>
+        <div class="team-layout">
+            <div class="member">
+                <img src="../images/avatar1.png" alt="Membre 1">
+                <h4>Nom Étudiant 1</h4>
+                <p>Responsable Design & Intégration HTML/CSS[cite: 39].</p>
+            </div>
+            <div class="member">
+                <img src="../images/avatar2.png" alt="Membre 2">
+                <h4>Nom Étudiant 2</h4>
+                <p>Développeur JavaScript & Interactivité[cite: 41].</p>
             </div>
         </div>
-    </header>
-
-    <main class="container" style="padding: 60px 10%;">
-        <h1 style="text-align: center; color: var(--efrei-blue);">Gouvernance de l'Efrei</h1>
-        <p style="text-align: center;">Découvrez les visages derrière l'excellence académique.</p>
-
-        <div class="team-grid">
-            
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <img src="../images/frederic.jpg" alt="Frédéric Meunier">
-                        <div class="member-info">
-                            <span class="nom">Frédéric Meunier</span>
-                            <span class="poste">Directeur général</span>
-                        </div>
-                    </div>
-                    <div class="flip-card-back">
-                        <h3>Frédéric Meunier</h3>
-                        <p class="bio-text">Diplômé d’une école de management (EBS, en 89), puis de l’eMba HEC (2008). Il prend la présidence de l’Efrei en 2009, puis la direction générale en 2011.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <img src="../images/sylvie.jpg" alt="Sylvie Gicquel">
-                        <div class="member-info">
-                            <span class="nom">Sylvie Gicquel</span>
-                            <span class="poste">Secrétaire générale</span>
-                        </div>
-                    </div>
-                    <div class="flip-card-back">
-                        <h3>Sylvie Gicquel</h3>
-                        <p class="bio-text">Contribue à la définition de la stratégie et au pilotage de la performance. Anciennement chez SNCF Gares & Connexions et Disney Télévision Paris.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <img src="../images/edouard.jpg" alt="Édouard Arnaud">
-                        <div class="member-info">
-                            <span class="nom">Édouard Arnaud</span>
-                            <span class="poste">Dir. Marketing & Développement</span>
-                        </div>
-                    </div>
-                    <div class="flip-card-back">
-                        <h3>Édouard Arnaud</h3>
-                        <p class="bio-text">Passionné par l’impact du numérique, il dirige le développement et les relations extérieures depuis 2019.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <img src="../images/emmanuel.jpg" alt="Emmanuel Peter">
-                        <div class="member-info">
-                            <span class="nom">Emmanuel Peter</span>
-                            <span class="poste">Directeur de la formation</span>
-                        </div>
-                    </div>
-                    <div class="flip-card-back">
-                        <h3>Emmanuel Peter</h3>
-                        <p class="bio-text">Ingénieur en génie informatique, ancien de Microsoft. Il se consacre à la formation des nouveaux professionnels du numérique depuis 1999.</p>
-                    </div>
-                </div>
-            </div>
-
-        </div>
+        <p class="about-text">Ce site vitrine a été conçu pour présenter le département informatique de l'Efrei dans le cadre du module de programmation Web[cite: 44].</p>
     </main>
-    
-
-    <footer style="text-align: center; padding: 40px; background: #f4f4f4;">
-        &copy; 2026 Efrei
-    </footer>
 </body>
 </html>
