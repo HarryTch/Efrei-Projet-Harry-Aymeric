@@ -19,7 +19,7 @@
 
             <div style="
                 width: 100%;
-                background: #ffffff;
+                background: #c7c7c7;
                 padding: 40px 50px;
                 border-radius: 12px;
                 box-shadow: 0 4px 20px rgba(0,0,0,0.1);
@@ -51,9 +51,14 @@
                            required 
                            style="padding: 15px; font-size: 1.1rem; width: 100%;">
 
-                    <textarea placeholder="Votre message" 
-                    rows="6" 
-                    style="padding: 15px; font-size: 1.1rem; width: 100%;"></textarea>
+                    <textarea id="userMessage"
+                    name="message"
+                    placeholder="Votre message"
+                    rows="6"
+                    required
+                    maxlength="1000"
+                    style="padding: 15px; font-size: 1.1rem; width: 100%;resize: none;"></textarea>
+
 
                     <button type="submit" 
                             class="btn btn-pink"
